@@ -4,6 +4,20 @@
   .block--modifier{...}
 */
 
+/* 
+  Font Weights: 300 <-> 700
+*/
+
+/* || Variables */
+:root {
+	--color-primary: #f53838;
+	--color-dark: #0b132a;
+	--color-dark-1: #4f5665;
+	--color-light: #fff;
+}
+
+/* || General Styling */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,4 +27,73 @@
 html,
 body {
 	font-family: "Rubik", sans-serif;
+}
+
+/* || Shared Styles */
+
+a {
+	text-decoration: none;
+	color: var(--color-dark);
+}
+
+.text-medium {
+	font-weight: 500;
+}
+
+/* || Buttons */
+
+.btn {
+	min-width: 150px;
+	padding: 20px 10px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.5;
+	color: var(--color-dark);
+}
+
+.btn--outlined-primary {
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+
+.btn--outlined-primary:hover {
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	transition: background-color ease-in-out 200ms;
+}
+
+.btn--rounded {
+	border-radius: 1.5em;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* || Header and Navigation */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 60px;
+	width: 100%;
+}
+
+.header__nav-list__link {
+	color: var(--color-dark-1);
+	margin: 0px 20px;
+}
+
+.header__account {
+	height: 100%;
+	text-align: center;
+}
+
+.header__account__link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	padding: 10px;
 }
