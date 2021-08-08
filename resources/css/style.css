@@ -47,6 +47,7 @@ a {
 	padding: 20px 10px;
 	font-weight: 500;
 	text-align: center;
+	/* This was used to align the text on v-middle  */
 	line-height: 1.5;
 	color: var(--color-dark);
 }
@@ -84,6 +85,10 @@ a {
 .header__nav-list__link {
 	color: var(--color-dark-1);
 	margin: 0px 20px;
+}
+
+.header__nav-list__link:hover {
+	color: var(--color-dark);
 }
 
 .header__account {
