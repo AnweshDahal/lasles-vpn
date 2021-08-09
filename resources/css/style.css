@@ -72,6 +72,10 @@ li {
 	justify-content: space-between;
 }
 
+.left {
+	transform: scaleX(-1);
+}
+
 /* || Typography */
 
 .text-weight-medium {
@@ -105,6 +109,7 @@ li {
 	/* This is used to align the text on v-middle  */
 	line-height: 1.5;
 	color: var(--color-dark);
+	cursor: pointer;
 }
 
 .btn--generic {
@@ -147,6 +152,19 @@ li {
 .btn--rounded {
 	border-radius: 1.5em;
 	padding: 10px;
+}
+
+.btn--circle {
+	height: 60px;
+	min-width: 60px !important;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn--light {
+	background-color: var(--color-light);
 }
 
 /* || Containers */
@@ -510,10 +528,19 @@ li {
 	width: 100%;
 	overflow-x: hidden;
 }
+
 .reviews__slider {
 	width: calc(100vw - 100px);
 	margin-left: 150px;
 	margin-top: 60px;
+}
+
+.reviews__controls {
+	width: 100%;
+}
+
+.reviews__buttons {
+	width: 150px;
 }
 
 /* || Footer */
