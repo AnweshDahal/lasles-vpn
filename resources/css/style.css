@@ -306,6 +306,10 @@ li {
 	line-height: 30px;
 }
 
+.column_link:hover {
+	color: var(--color-dark);
+}
+
 /* || Header and Navigation */
 
 .header {
