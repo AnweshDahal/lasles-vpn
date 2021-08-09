@@ -23,6 +23,7 @@
 	--color-dark-shadow: rgba(13, 16, 37, 0.041);
 	--color-dark-shadow-1: rgba(13, 16, 37, 0.1);
 	--color-green: #2fab73;
+	--mobile-overlay-color: #ffffff;
 }
 
 /* || General Styling */
@@ -175,6 +176,7 @@ li {
 
 .container {
 	width: 84%;
+	max-width: 1400px;
 	margin: auto;
 	margin-top: 30px;
 }
@@ -539,6 +541,7 @@ li {
 
 .reviews__slider {
 	width: calc(100vw - 100px);
+	max-width: 1400px;
 	margin-left: 150px;
 	margin-top: 60px;
 }
@@ -590,4 +593,84 @@ li {
 	justify-content: space-between;
 	width: 600px;
 	margin-left: 230px;
+}
+
+/* Disabling Mobile only selectors */
+
+.m-nav-list {
+	display: none;
+}
+
+.m-btn {
+	display: none;
+}
+
+@media only screen and (max-width: 900px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	.m-btn {
+		display: inline-block;
+	}
+
+	.m-btn--menu {
+		background: none;
+		border: none;
+		font-size: 2rem;
+	}
+
+	.m-btn__img {
+		font-size: 2rem;
+	}
+	/* || Mobile Container */
+	.container {
+		width: 90%;
+	}
+
+	.header {
+		/* flex-direction: column; */
+		width: 100%;
+	}
+
+	.account__link {
+		display: none;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.m-nav-list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		z-index: 100;
+		background-color: var(--mobile-overlay-color);
+	}
+
+	.m-nav-list__close-btn {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		padding: 20px;
+		background: none;
+		border: none;
+		color: var(--color-dark);
+	}
+
+	.m-nav-list__img {
+		font-size: 2.5rem;
+	}
+
+	.m-nav-list__link {
+		color: var(--color-dark);
+		margin-bottom: 25px;
+		font-size: 1.5rem;
+	}
 }
