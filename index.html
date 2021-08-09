@@ -15,7 +15,7 @@
 
 <body>
   <div class="container">
-    <header class="header">
+    <header class="header flex flex--spaced">
       <div class="logo">
         <a href="#" class="logo__link">
           <img src="resources/img/logo.svg" alt="logo" class="header__logo__link__image">
@@ -29,110 +29,110 @@
         <a href="#" class="nav-list__link">Help</a>
       </div>
       <div class="header__account">
-        <a href="#" class="account__link text-medium">Sign In</a>
+        <a href="#" class="account__link text-weight-medium">Sign In</a>
         <a href="#" class="account__link btn btn--outlined-primary btn--rounded">Sign Up</a>
       </div>
     </header>
     <section class="about">
-      <div class="intro">
+      <div class="intro flex flex--spaced">
         <div class="intro__message">
-          <h2 class="intro__message__title">
+          <h2 class="intro__title">
             Want anything to be easy with <strong>LaslessVPN.</strong>
           </h2>
 
-          <p class="intro__message__text">
+          <p class="intro__text">
             Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting
             features from
             us.
           </p>
 
-          <div class="intro__message__more">
-            <a href="#" class="intro__message__more__btn btn btn--primary btn--lg btn--shadow-primary">Get
+          <div class="intro__more">
+            <a href="#" class="btn btn--primary btn--lg btn--shadow-primary btn--generic">Get
               Started</a>
           </div>
 
         </div>
         <img src="resources/img/person_1.svg" alt="" class="intro__image">
       </div>
-      <div class="stats">
+      <div class="stats flex flex--center">
         <!-- User Stats -->
-        <div class="stat">
+        <div class="stat flex flex--center">
           <div class="stat__icon">
-            <img src="resources/img/user.svg" alt="" class="stat__icon__img">
+            <img src="resources/img/user.svg" alt="" class="stat__img">
           </div>
           <div class="stat__details">
-            <span class="stat__details__num">
+            <span class="stat__num">
               90+
             </span>
-            <span class="stat__details__text">
+            <span class="stat__text">
               Users
             </span>
           </div>
         </div>
 
         <!-- Location Stats -->
-        <div class="stat">
-          <div class="stat__icon">
-            <img src="resources/img/location.svg" alt="" class="stat__icon__img">
+        <div class="stat flex flex--center">
+          <div class="stat__icon flex flex--center">
+            <img src="resources/img/location.svg" alt="" class="stat__img">
           </div>
           <div class="stat__details">
-            <span class="stat__details__num">
+            <span class="stat__num">
               30+
             </span>
-            <span class="stat__details__text">
+            <span class="stat__text">
               Locations
             </span>
           </div>
         </div>
 
         <!-- Server Stats -->
-        <div class="stat">
-          <div class="stat__icon">
-            <img src="resources/img/server.svg" alt="" class="stat__icon__img">
+        <div class="stat flex flex--center">
+          <div class="stat__icon flex flex--center">
+            <img src="resources/img/server.svg" alt="" class="stat__img">
           </div>
           <div class="stat__details">
-            <span class="stat__details__num">
+            <span class="stat__num">
               50+
             </span>
-            <span class="stat__details__text">
+            <span class="stat__text">
               Servers
             </span>
           </div>
         </div>
       </div>
-	  
-	  <!-- VPN Features -->
-      <div class="features">
+
+      <!-- VPN Features -->
+      <div class="features flex flex--spaced">
         <img src="resources/img/person_2.svg" alt="" class="feature-image">
         <div class="details">
-          <h3 class="details__title">
+          <h3 class="section-title">
             We Provide Many Features You Can Use
           </h3>
-          <p class="details__message">
+          <p class="section-subtitle">
             You can explore the features that we provide with fun and have their own functions each feature.
           </p>
           <ul class="details__list">
-            <li class="details__list__item">
-              <img src="resources/img/check.svg" alt="" class="details__list__item__img">
-              <span class="details__list__item__text">
+            <li class="details__item">
+              <img src="resources/img/check.svg" alt="" class="details__item-img">
+              <span class="details__item-text">
                 Powerfull online protection.
               </span>
             </li>
-            <li class="details__list__item">
-              <img src="resources/img/check.svg" alt="" class="details__list__item__img">
-              <span class="details__list__item__text">
+            <li class="details__item">
+              <img src="resources/img/check.svg" alt="" class="details__item-img">
+              <span class="details__item-text">
                 Internet without borders.
               </span>
             </li>
-            <li class="details__list__item">
-              <img src="resources/img/check.svg" alt="" class="details__list__item__img">
-              <span class="details__list__item__text">
+            <li class="details__item">
+              <img src="resources/img/check.svg" alt="" class="details__item-img">
+              <span class="details__item__text">
                 Supercharged VPN
               </span>
             </li>
-            <li class="details__list__item">
-              <img src="resources/img/check.svg" alt="" class="details__list__item__img">
-              <span class="details__list__item__text">
+            <li class="details__item">
+              <img src="resources/img/check.svg" alt="" class="details__item-img">
+              <span class="details__item__text">
                 No specific time limits.
               </span>
             </li>
@@ -141,6 +141,50 @@
       </div>
     </section>
   </div>
+  <section class="plans-section">
+    <div class="container container--narrow">
+      <h3 class="section-title text-center">
+        Choose Your Plan
+      </h3>
+      <p class="section-subtitle text-center">
+        Let's choose the package that is best for you and explore it happily and cheerfully.
+      </p>
+    </div>
+    <div class="container">
+      <div class="plans">
+        <div class="plan plan--selected">
+          <div class="plan__image">
+            <img src="resources/img/tier_free.svg" alt="" class="plan__img">
+          </div>
+          <div class="plan__title">Free Plan</div>
+          <ul class="plan__features-list">
+            <li class="plan__item">
+              <img src="resources/img/tick.svg" alt="" class="plan__list-bullet">
+              <span class="plan__features-list__item__text">Unlimited Bandwitch</span>
+            </li>
+            <li class="plan__item">
+              <img src="resources/img/tick.svg" alt="" class="plan__features-list__item__img">
+              <span class="plan__features-list__item__text">Encrypted Connection</span>
+            </li>
+            <li class="plan__features-list__item">
+              <img src="resources/img/tick.svg" alt="" class="plan__features-list__item__img">
+              <span class="plan__features-list__item__text">No Traffic Logs</span>
+            </li>
+            <li class="plan__features-list__item">
+              <img src="resources/img/tick.svg" alt="" class="plan__features-list__item__img">
+              <span class="plan__features-list__item__text">Works on All Devices</span>
+            </li>
+          </ul>
+          <div class="plan__pricing">
+            <div class="plan__pricing__price">
+              <span class="text-lg text-grey"><strong class="text-dark">$9</strong>/ mo</span>
+            </div>
+            <a href="#" class="plan__pricing__btn btn btn--outlined-primary btn--rounded">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
