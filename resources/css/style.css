@@ -112,6 +112,10 @@ li {
 	cursor: pointer;
 }
 
+.btn__img {
+	font-size: 1.75rem;
+}
+
 .btn--generic {
 	padding: 20px 10px;
 }
