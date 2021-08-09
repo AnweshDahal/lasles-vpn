@@ -17,8 +17,10 @@
 	--color-dark-1: #4f5665;
 	--color-light-gray: #f3f3f3;
 	--color-light-gray-1: #f6f6f6;
+	--color-light-gray-2: #afb5c0;
 	--color-light: #fff;
 	--color-dark-shadow: rgba(13, 16, 37, 0.041);
+	--color-dark-shadow-1: rgba(13, 16, 37, 0.1);
 	--color-green: #2fab73;
 }
 
@@ -70,19 +72,6 @@ li {
 }
 
 /* || Typography */
-
-.section-title {
-	font-size: 35px;
-	line-height: 50px;
-	color: var(--color-dark);
-	font-weight: 600;
-}
-
-.section-subtitle {
-	margin-top: 20px;
-	line-height: 30px;
-	color: var(--color-dark-1);
-}
 
 .text-weight-medium {
 	font-weight: 500;
@@ -169,6 +158,74 @@ li {
 
 .container--narrow {
 	width: 40%;
+}
+
+/* || Card */
+
+.card {
+	padding: 20px;
+	border-radius: 0.3em;
+	min-height: 150px;
+	min-width: 200px;
+	box-shadow: 0px 50px 50px 10px var(--color-dark-shadow);
+}
+
+.card--horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card--middle {
+	margin: auto;
+}
+
+.card--lg {
+	padding: 50px 70px;
+}
+
+.section-title,
+.card__title {
+	font-size: 35px;
+	line-height: 50px;
+	color: var(--color-dark);
+	font-weight: 600;
+}
+
+.card__title {
+	width: 65%;
+	line-height: 40px;
+}
+
+.section-subtitle {
+	margin-top: 20px;
+	line-height: 30px;
+	color: var(--color-dark-1);
+}
+
+.card__subtitle {
+	margin-top: 8px;
+	line-height: 30px;
+	color: var(--color-dark-1);
+}
+
+/* || Column */
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column__title {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--color-dark);
+}
+
+.column__link {
+	color: var(--color-dark-1);
+	margin-top: 10px;
+	line-height: 30px;
 }
 
 /* || Header and Navigation */
@@ -320,4 +377,45 @@ li {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
+}
+
+/* || Footer */
+.footer-contents {
+	margin-top: 70px;
+	display: flex;
+}
+.socials {
+	width: 320px;
+	height: 350px;
+}
+
+.socials__company-info {
+	line-height: 1.5;
+	margin-top: 20px;
+}
+
+.socials__links {
+	width: 50%;
+	margin: 20px 0;
+}
+
+.socials__link {
+	height: 32px;
+	width: 32px;
+	border-radius: 33px;
+	background-color: var(--color-primary);
+	box-shadow: 0 28px 18px var(--color-dark-shadow-1);
+}
+
+.social__copyright {
+	color: var(--color-light-gray-2);
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+	margin-left: 230px;
 }
