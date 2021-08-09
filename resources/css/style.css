@@ -218,6 +218,53 @@ li {
 	color: var(--color-dark-1);
 }
 
+/* || Review Cards */
+.r-card {
+	height: 230px;
+	width: 400px;
+	padding: 30px;
+	border: 2px solid var(--color-light-gray-3);
+	border-radius: 0.5em;
+}
+
+.r-card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.r-card__cust-name {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.r-card__cust-add {
+	font-size: 14px;
+}
+.r-card__cust {
+	display: flex;
+	align-items: center;
+}
+
+.r-card__cust-details {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.r-card__point {
+	margin-right: 10px;
+}
+
+.r-card__review {
+	line-height: 1.75;
+}
+
+.r-card:hover {
+	border-color: var(--color-primary);
+}
+
 /* || Column */
 .column {
 	display: flex;
@@ -451,10 +498,22 @@ li {
 	margin-top: 150px;
 }
 
-/* Accessible Services */
+/* || Accessible Services */
 .services {
 	width: 80%;
 	margin: 100px auto;
+}
+
+/* || Reviews */
+
+.reviews {
+	width: 100%;
+	overflow-x: hidden;
+}
+.reviews__slider {
+	width: calc(100vw - 100px);
+	margin-left: 150px;
+	margin-top: 60px;
 }
 
 /* || Footer */
