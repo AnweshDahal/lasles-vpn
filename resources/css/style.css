@@ -488,9 +488,6 @@ li {
 	margin: 30px 0;
 }
 
-.plan__features-list {
-}
-
 .plan__item {
 	margin-bottom: 10px;
 	line-height: 30px;
@@ -510,10 +507,6 @@ li {
 
 .plan__price {
 	margin-bottom: 33px;
-}
-
-.plan__pricing-btn {
-	/*  */
 }
 
 /* Locations */
@@ -678,6 +671,64 @@ li {
 		flex-direction: column;
 	}
 
+	/* Mobile Review Cards */
+	/* || Review Cards */
+	.r-card {
+		height: max-content;
+		width: 100%;
+		padding: 30px;
+		margin-top: 30px;
+		border: 2px solid var(--color-light-gray-3);
+		border-radius: 0.5em;
+	}
+
+	.r-card__header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.r-card__cust-name {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.r-card__cust-add {
+		font-size: 14px;
+	}
+
+	.r-card__img {
+		margin-bottom: 20px;
+	}
+	.r-card__cust {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.r-card__cust-details {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+
+	.r-card__point {
+		margin-right: 10px;
+	}
+
+	.r-card__rating {
+		margin-bottom: 30px;
+	}
+
+	.r-card__review {
+		line-height: 1.75;
+	}
+
+	.r-card:hover {
+		border-color: var(--color-primary);
+	}
+
 	/* || Mobile Header */
 	.header {
 		/* flex-direction: column; */
@@ -797,15 +848,44 @@ li {
 		margin-top: 30px;
 	}
 
-	.plan__price {
-		/* font-size: 2rem; */
-	}
-
 	.plan__pricing-btn {
 		line-height: 2;
 	}
 
 	.plan__expand {
 		margin-top: 20px;
+	}
+
+	/* Mobile Location Map */
+	/* !! To be worked on !! */
+	.location__img {
+		width: 95%;
+	}
+
+	/* || Mobile Services */
+	/* || To be worked on */
+	.services {
+		display: none;
+	}
+
+	/* || Mobile Reviews Section */
+	.reviews {
+		margin-top: 150px;
+		overflow: none;
+	}
+
+	.reviews__slider {
+		margin: auto;
+		margin-top: 50px;
+		width: 90%;
+		flex-direction: column;
+	}
+
+	.reviews__controls {
+		display: none;
+	}
+
+	.reviews__pages {
+		display: none;
 	}
 }
