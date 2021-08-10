@@ -625,6 +625,10 @@ li {
 		display: inline-block;
 	}
 
+	.m-hidden {
+		display: none;
+	}
+
 	.rotate-up {
 		transform: scaleY(-1);
 	}
@@ -656,6 +660,21 @@ li {
 	.m-btn--expand {
 		background: none;
 		border: none;
+	}
+
+	.m-btn--footer {
+		display: inline-block;
+		min-height: 48px;
+		width: 100%;
+		margin: 30px 0;
+		vertical-align: middle;
+		border-radius: 0.25em;
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 2;
+		text-align: center;
+		background-color: var(--color-primary);
+		color: var(--color-light);
 	}
 	/* || Mobile Container */
 	.container {
@@ -887,5 +906,10 @@ li {
 
 	.reviews__pages {
 		display: none;
+	}
+
+	/* || Mobile Footer */
+	.footer-contents {
+		flex-direction: column;
 	}
 }
