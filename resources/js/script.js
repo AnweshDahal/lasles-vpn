@@ -15,7 +15,6 @@ function menuHandler() {
 
 	// Menu Navigation Buttons
 	let navButtons = document.getElementsByClassName("m-nav-list__link");
-	console.log("Got");
 	for (let i = 0; i < navButtons.length; i++) {
 		navButtons[i].addEventListener("click", (event) => {
 			event.preventDefault();
@@ -23,6 +22,21 @@ function menuHandler() {
 		});
 	}
 }
+
+function accordionHandler() {
+	let expandBtn = document.getElementsByClassName("plan__expand");
+
+	for (let i = 0; i < expandBtn.length; i++) {
+		expandBtn[i].addEventListener("click", (event) => {
+			event.preventDefault();
+			expandBtn[i].parentElement
+				.querySelector(".plan__features-list")
+				.classList.toggle("m-accordion");
+			expandBtn[i].parentElement.query;
+		});
+	}
+}
 document.addEventListener("DOMContentLoaded", (event) => {
 	menuHandler();
+	accordionHandler();
 });

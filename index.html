@@ -28,6 +28,7 @@
         <a href="#" class="nav-list__link">Testemonials</a>
         <a href="#" class="nav-list__link">Help</a>
       </div>
+
       <!-- Mobile Navigation Menu -->
       <div class="m-nav-list flex flex--center" id="mMenu">
         <button class="m-nav-list__close-btn" id="closeBtn">
@@ -43,6 +44,7 @@
         <a href="#" class="m-nav-list__link">Sign Up</a>
       </div>
 
+      <!-- Sign in and Sign Up Buttons -->
       <div class="header__account">
         <a href="#" class="account__link text-weight-medium">Sign In</a>
         <a href="#" class="account__link btn btn--outlined-primary btn--rounded">Sign Up</a>
@@ -51,6 +53,8 @@
         </button>
       </div>
     </header>
+
+    <!-- About Section -->
     <section class="about">
       <div class="intro flex flex--spaced">
         <div class="intro__message">
@@ -72,9 +76,9 @@
         </div>
         <img src="resources/img/person_1.svg" alt="" class="intro__image">
       </div>
-      <div class="stats flex flex--center">
+      <div class="stats flex flex--center ">
         <!-- User Stats -->
-        <div class="stat flex flex--center">
+        <div class="stat flex flex--mobile-left flex--center">
           <div class="stat__icon">
             <img src="resources/img/user.svg" alt="" class="stat__img">
           </div>
@@ -89,7 +93,7 @@
         </div>
 
         <!-- Location Stats -->
-        <div class="stat flex flex--center">
+        <div class="stat flex flex--mobile-left flex--center">
           <div class="stat__icon flex flex--center">
             <img src="resources/img/location.svg" alt="" class="stat__img">
           </div>
@@ -104,7 +108,7 @@
         </div>
 
         <!-- Server Stats -->
-        <div class="stat flex flex--center">
+        <div class="stat flex flex--mobile-left flex--center">
           <div class="stat__icon flex flex--center">
             <img src="resources/img/server.svg" alt="" class="stat__img">
           </div>
@@ -120,7 +124,7 @@
       </div>
 
       <!-- VPN Features -->
-      <div class="features flex flex--spaced">
+      <div class="features flex flex--mobile-column flex--spaced">
         <img src="resources/img/person_2.svg" alt="" class="feature-image">
         <div class="details">
           <h3 class="section-title">
@@ -172,12 +176,12 @@
     <div class="container">
       <div class="plans">
         <!-- Free Plan -->
-        <div class="plan">
+        <div class="plan accordion">
           <div class="plan__image">
             <img src="resources/img/tier_free.svg" alt="" class="plan__img">
           </div>
           <div class="plan__title">Free Plan</div>
-          <ul class="plan__features-list">
+          <ul class="plan__features-list  m-accordion">
             <li class="plan__item">
               <img src="resources/img/tick.svg" alt="" class="plan__list-bullet">
               <span class="plan__item-text">Unlimited Bandwitch</span>
@@ -204,12 +208,12 @@
         </div>
 
         <!-- Standard Plan -->
-        <div class="plan">
+        <div class="plan accordion">
           <div class="plan__image">
             <img src="resources/img/tier_standard.svg" alt="" class="plan__img">
           </div>
           <div class="plan__title">Standard Plan</div>
-          <ul class="plan__features-list">
+          <ul class="plan__features-list m-accordion">
             <li class="plan__item">
               <img src="resources/img/tick.svg" alt="" class="plan__list-bullet">
               <span class="plan__item-text">Unlimited Bandwitch</span>
@@ -245,7 +249,8 @@
             <img src="resources/img/tier_premium.svg" alt="" class="plan__img">
           </div>
           <div class="plan__title">Premium Plan</div>
-          <ul class="plan__features-list">
+
+          <ul class="plan__features-list m-accordion">
             <li class="plan__item">
               <img src="resources/img/tick.svg" alt="" class="plan__list-bullet">
               <span class="plan__item-text">Unlimited Bandwitch</span>
@@ -277,6 +282,11 @@
             </div>
             <a href="#" class="plan__pricing-btn btn btn--outlined-primary btn--rounded">Select</a>
           </div>
+          <button class="m-only m-btn m-btn--expand plan__expand">
+            <span class="material-icons-round m-btn__img rotate-up">
+              expand_more
+            </span>
+          </button>
         </div>
       </div>
     </div>
