@@ -32,7 +32,10 @@ function accordionHandler() {
 			expandBtn[i].parentElement
 				.querySelector(".plan__features-list")
 				.classList.toggle("m-accordion");
-			expandBtn[i].parentElement.query;
+			expandBtn[i].parentElement
+				.querySelector(".plan__pricing-btn")
+				.classList.toggle("hidden");
+			expandBtn[i].classList.toggle("rotate-up");
 		});
 	}
 }

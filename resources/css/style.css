@@ -621,7 +621,7 @@ li {
 		display: none;
 	}
 	.text-lg {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 	.m-accordion {
 		height: 0;
@@ -630,6 +630,10 @@ li {
 
 	.m-only {
 		display: inline-block;
+	}
+
+	.rotate-up {
+		transform: scaleY(-1);
 	}
 	/* || Typograpgy */
 	.section-title {
@@ -783,16 +787,18 @@ li {
 	}
 
 	.plan__title {
-		margin-top: 0;
+		margin-top: 10px;
+		font-size: 1.5rem;
 	}
 
-	.plan .plan__pricing {
+	.plan__pricing {
 		bottom: auto;
 		position: relative;
+		margin-top: 30px;
 	}
 
 	.plan__price {
-		font-size: 1.25rem;
+		/* font-size: 2rem; */
 	}
 
 	.plan__pricing-btn {
