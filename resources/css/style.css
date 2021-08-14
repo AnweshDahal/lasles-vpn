@@ -138,6 +138,10 @@ li {
 }
 
 @media only screen and (min-width: 1024px) {
+	.flex--mobile-left{
+		align-items: center;
+		justify-content: center;
+	}
 	.container {
 		width: 84%;
 	}
@@ -368,14 +372,14 @@ body {
 	}
 }
 
-.flex--mobile-left {
+/* .flex--mobile-left {
 	align-items: flex-start;
 	justify-content: flex-start;
 }
 
 .flex--mobile-column {
 	flex-direction: column;
-}
+} */
 
 /* Mobile Review Cards */
 /* || Review Cards */
