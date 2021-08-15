@@ -372,15 +372,6 @@ body {
 	}
 }
 
-/* .flex--mobile-left {
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-.flex--mobile-column {
-	flex-direction: column;
-} */
-
 /* Mobile Review Cards */
 /* || Review Cards */
 .r-card {
@@ -706,10 +697,42 @@ body {
 	max-width: 100%;
 }
 
+/* || Features List Block */
+
 .details {
 	width: 80%;
 	margin-top: 30px;
 }
+
+@media only screen and (min-width: 1024px){
+	.details{
+		width: 400px;
+	}
+}
+.details__list {
+	margin-top: 20px;
+}
+
+.details__item {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 14px;
+	color: var(--color-dark-1);
+}
+
+.details__item-img {
+	height: 25px;
+	width: 25px;
+	margin-right: 10px;
+}
+
+.details__item-text {
+	line-height: 25px;
+}
+
+
+
 
 .plans {
 	flex-direction: column;
