@@ -404,11 +404,29 @@ body {
 	border-radius: 0.5em;
 }
 
+@media only screen and (min-width: 1024px){
+	/* || Review Cards */
+	.r-card {
+		height: 230px;
+		width: 400px;
+		padding: 30px;
+		border: 2px solid var(--color-light-gray-3);
+		border-radius: 0.5em;
+	}
+}
+
 .r-card__header {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 	margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1024px){
+	.r-card__header {
+		justify-content: space-between;
+		flex-direction: row;
+	}
 }
 
 .r-card__cust-name {
@@ -420,13 +438,16 @@ body {
 	font-size: 14px;
 }
 
-.r-card__img {
-	margin-bottom: 20px;
-}
 .r-card__cust {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px){
+	.r-card__cust {
+		flex-direction: row;
+	}
 }
 
 .r-card__cust-details {
@@ -437,6 +458,16 @@ body {
 
 .r-card__point {
 	margin-right: 10px;
+}
+
+.r-card__img {
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1024px){
+	.r-card__img {
+		margin: 0;
+	}
 }
 
 .r-card__rating {
@@ -453,45 +484,6 @@ body {
 
 /* || Desktop Review Cards */
 @media only screen and (min-width: 1024px) {
-	/* || Review Cards */
-	.r-card {
-		height: 230px;
-		width: 400px;
-		padding: 30px;
-		border: 2px solid var(--color-light-gray-3);
-		border-radius: 0.5em;
-	}
-
-	.r-card__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 15px;
-	}
-
-	.r-card__cust-name {
-		font-size: 18px;
-		margin-bottom: 5px;
-	}
-
-	.r-card__cust-add {
-		font-size: 14px;
-	}
-	.r-card__cust {
-		display: flex;
-		align-items: center;
-	}
-
-	.r-card__cust-details {
-		display: flex;
-		flex-direction: column;
-		margin-left: 20px;
-	}
-
-	.r-card__point {
-		margin-right: 10px;
-	}
-
 	.r-card__review {
 		line-height: 1.75;
 	}
@@ -924,6 +916,14 @@ body {
 	margin-top: 50px;
 	width: 90%;
 	flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px){
+	.reviews__slider{
+		flex-direction: row;
+		width: calc(100vw - 100px);
+		margin-left: 150px;
+	}
 }
 
 .reviews__controls {
