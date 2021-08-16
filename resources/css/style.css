@@ -934,6 +934,23 @@ body {
 	display: none;
 }
 
+@media only screen and (min-width: 1024px){
+	.reviews__controls {
+		display: flex;
+		width: 100%;
+	}
+
+	.reviews__pages{
+		display: block;
+	}
+
+	.reviews__buttons {
+		width: 150px;
+	}
+}
+
+
+
 /* || Mobile Footer */
 .footer-contents {
 	flex-direction: column;
