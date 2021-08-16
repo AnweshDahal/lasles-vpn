@@ -881,10 +881,36 @@ body {
 	width: 95%;
 }
 
-/* || Mobile Services */
-/* || To be worked on */
+/* Locations */
+.locations {
+	margin-top: 150px;
+}
+
+.locations__map {
+	width: 100%;
+	margin-top: 150px;
+}
+
+@media only screen and (min-width: 1024px){
+	.location__img{
+		width: auto;
+	}
+}
+
+/* || Accessible Services */
 .services {
+	/* || To be worked on */
 	display: none;
+}
+
+/* || Desktop Services */
+@media only screen and (min-width: 1024px){
+	/* || Accessible Services */
+	.services {
+		display: flex;
+		width: 80%;
+		margin: 100px auto;
+	}
 }
 
 /* || Mobile Reviews Section */
