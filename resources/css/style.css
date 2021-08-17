@@ -115,12 +115,14 @@ li {
 	margin-top: 30px;
 }
 
+/* Container properties for large screens */
 @media only screen and (min-width: 1024px){
 	
 	.container {
 		width: 84%;
 	}
 
+	/* || Large screen only rules */
 	.container--narrow {
 		width: 40%;
 	}
@@ -147,6 +149,7 @@ li {
 	}
 }
 
+/* || Resetting the rule for large screens */
 @media only screen and (min-width: 1024px) {
 	.flex--mobile-left{
 		align-items: center;
@@ -196,6 +199,7 @@ li {
 	line-height: 40px;
 }
 
+/* || Section title and card title for large screen */
 @media only screen and (min-width: 1024px){
 	.section-title,
 	.card__title {
@@ -216,6 +220,7 @@ li {
 }
 
 /* || Column */
+
 .column {
 	display: flex;
 	flex-direction: column;
@@ -274,8 +279,6 @@ body {
 .rotate-up {
 	transform: scaleY(-1);
 }
-/* || Typograpgy */
-
 
 /* || Buttons */
 .btn {
@@ -387,6 +390,7 @@ body {
 	}
 }
 
+/* || Desktop only button rules */
 @media only screen and (min-width: 1024px) {
 	/* || Buttons */
 	.btn {
@@ -395,7 +399,6 @@ body {
 	}
 }
 
-/* Mobile Review Cards */
 /* || Review Cards */
 .r-card {
 	height: max-content;
@@ -406,6 +409,7 @@ body {
 	border-radius: 0.5em;
 }
 
+/* || Desktop review cards */
 @media only screen and (min-width: 1024px){
 	/* || Review Cards */
 	.r-card {
@@ -424,6 +428,7 @@ body {
 	margin-bottom: 15px;
 }
 
+/* || Review card header on desktop */
 @media only screen and (min-width: 1024px){
 	.r-card__header {
 		justify-content: space-between;
@@ -446,6 +451,7 @@ body {
 	flex-direction: column;
 }
 
+/* || Review card customer name on desktop screen */
 @media only screen and (min-width: 1024px){
 	.r-card__cust {
 		flex-direction: row;
@@ -466,6 +472,7 @@ body {
 	margin-bottom: 20px;
 }
 
+/* || Review card image on desktop */
 @media only screen and (min-width: 1024px){
 	.r-card__img {
 		margin: 0;
@@ -484,18 +491,7 @@ body {
 	border-color: var(--color-primary);
 }
 
-/* || Desktop Review Cards */
-@media only screen and (min-width: 1024px) {
-	.r-card__review {
-		line-height: 1.75;
-	}
-
-	.r-card:hover {
-		border-color: var(--color-primary);
-	}
-}
-
-/* || Desktop Specifics */
+/* || Desktop Specific Rules */
 @media only screen and (min-width: 1024px) {
 	/* Disabling Mobile only selectors */
 
@@ -512,13 +508,14 @@ body {
 	}
 }
 
-/* || Mobile Header */
+/* || Header */
 .header {
 	/* flex-direction: column; */
 	width: 100%;
 	min-height: 60px;
 }
 
+/* || The sign in and sign up buttons are invisible on mobile along with the desktop navigation list */
 .account__link {
 	display: none;
 }
@@ -594,6 +591,7 @@ body {
 .about {
 	margin-top: 50px;
 }
+
 .intro__image {
 	display: none;
 }
@@ -617,6 +615,7 @@ body {
 	margin-top: 40px;
 }
 
+/* || Intro section in large screens */
 @media only screen and (min-width: 1024px) {
 	/* || About Section */
 	.intro__title {
@@ -649,6 +648,7 @@ body {
 	box-shadow: none;
 }
 
+/* || Stats section in large screens */
 @media only screen and (min-width: 1024px) {
 	.stats {
 		flex-direction: row;
@@ -666,6 +666,7 @@ body {
 	background-color: #fff;
 }
 
+/* || Stat on a large screen */
 @media only screen and (min-width: 1024px) {
 	.stat {
 		border-right: 3px solid var(--color-light-gray);
@@ -799,11 +800,11 @@ body {
 	align-items: center;
 	width: 330px;
 	height: max-content;
+	margin-bottom: 30px;
 	padding: 20px;
 	border: 2px solid var(--color-light-gray-3);
 	border-radius: 0.5em;
 	transition: border-color ease-in-out 200ms;
-	margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 1024px){
