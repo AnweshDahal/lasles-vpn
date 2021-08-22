@@ -77,8 +77,11 @@
         <img src="resources/img/person_1.svg" alt="A person using the vpn" class="intro__image">
       </div>
       <div class="stats flex flex--center ">
+        <!-- The following section had to be written twice 
+          because there was a collision of utility classes
+        -->
         <!-- User Stats -->
-        <div class="stat flex flex--mobile-left flex--center">
+        <div class="stat flex flex--center flex--mobile-left">
           <div class="stat__icon">
             <img src="resources/img/user.svg" alt="user icon" class="stat__img">
           </div>
@@ -93,7 +96,7 @@
         </div>
 
         <!-- Location Stats -->
-        <div class="stat flex flex--mobile-left flex--center">
+        <div class="stat flex flex--center flex--mobile-left">
           <div class="stat__icon flex flex--center">
             <img src="resources/img/location.svg" alt="location pin icon" class="stat__img">
           </div>
@@ -108,7 +111,7 @@
         </div>
 
         <!-- Server Stats -->
-        <div class="stat flex flex--mobile-left flex--center">
+        <div class="stat flex flex--center flex--mobile-left">
           <div class="stat__icon flex flex--center">
             <img src="resources/img/server.svg" alt="server icon" class="stat__img">
           </div>
@@ -323,7 +326,7 @@
   </section>
 
   <!-- Accessible Services -->
-  <section class="services flex flex--mobile-column flex--spaced">
+  <section class="services flex--mobile-column flex--spaced">
     <img src="resources/img/netflix_logo.svg" alt="Netflix logo" class="services__img">
     <img src="resources/img/reddit_logo.svg" alt="Reddit logo" class="services__img">
     <img src="resources/img/amazon_logo.svg" alt="Amazon logo" class="services__img">
@@ -409,7 +412,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="reviews__controls flex flex--spaced">
+      <div class="reviews__controls flex--spaced">
         <div class="reviews__pages">
           <!--  -->
         </div>
