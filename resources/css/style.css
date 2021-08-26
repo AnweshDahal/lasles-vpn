@@ -115,24 +115,27 @@ li {
 	margin-top: 30px;
 }
 
+/* Container properties for large screens */
 @media only screen and (min-width: 1024px){
 	
 	.container {
 		width: 84%;
 	}
 
+	/* || Large screen only rules */
 	.container--narrow {
 		width: 40%;
 	}
+
+	.container--narrow-2 {
+		width: 35%;
+	}
+	
+	.container--narrower {
+		width: 27%;
+	}
 }
 
-.container--narrow-2 {
-	width: 35%;
-}
-
-.container--narrower {
-	width: 27%;
-}
 
 /* || Mobile Only Container Rules */
 @media only screen and (max-width: 425px) {
@@ -146,6 +149,7 @@ li {
 	}
 }
 
+/* || Resetting the rule for large screens */
 @media only screen and (min-width: 1024px) {
 	.flex--mobile-left{
 		align-items: center;
@@ -182,10 +186,12 @@ li {
 .section-title, .card__title{
 	color: var(--color-dark);
 	font-weight: 600;
+	line-height: 50px;
 }
 
 .section-title {
 	font-size: 1.85rem;
+	width: auto;
 }
 
 .card__title {
@@ -193,12 +199,12 @@ li {
 	line-height: 40px;
 }
 
+/* || Section title and card title for large screen */
 @media only screen and (min-width: 1024px){
 	.section-title,
 	.card__title {
 	font-size: 35px;
-	line-height: 50px;
-}
+	}
 }
 
 .section-subtitle {
@@ -214,6 +220,7 @@ li {
 }
 
 /* || Column */
+
 .column {
 	display: flex;
 	flex-direction: column;
@@ -244,9 +251,6 @@ body {
 
 /* || SHARED CLASSES */
 /* || Extra Classes */
-.hidden {
-	display: none;
-}
 .text-lg {
 	font-size: 1.5rem;
 }
@@ -265,15 +269,16 @@ body {
 	display: inline-block;
 }
 
-.m-hidden {
-	display: none;
+/* Displays only in larger screen */
+@media only screen and (max-width: 425px){
+	.m-hidden {
+		display: none;
+	}
 }
 
 .rotate-up {
 	transform: scaleY(-1);
 }
-/* || Typograpgy */
-
 
 /* || Buttons */
 .btn {
@@ -385,6 +390,7 @@ body {
 	}
 }
 
+/* || Desktop only button rules */
 @media only screen and (min-width: 1024px) {
 	/* || Buttons */
 	.btn {
@@ -393,7 +399,6 @@ body {
 	}
 }
 
-/* Mobile Review Cards */
 /* || Review Cards */
 .r-card {
 	height: max-content;
@@ -404,6 +409,7 @@ body {
 	border-radius: 0.5em;
 }
 
+/* || Desktop review cards */
 @media only screen and (min-width: 1024px){
 	/* || Review Cards */
 	.r-card {
@@ -422,6 +428,7 @@ body {
 	margin-bottom: 15px;
 }
 
+/* || Review card header on desktop */
 @media only screen and (min-width: 1024px){
 	.r-card__header {
 		justify-content: space-between;
@@ -444,6 +451,7 @@ body {
 	flex-direction: column;
 }
 
+/* || Review card customer name on desktop screen */
 @media only screen and (min-width: 1024px){
 	.r-card__cust {
 		flex-direction: row;
@@ -464,6 +472,7 @@ body {
 	margin-bottom: 20px;
 }
 
+/* || Review card image on desktop */
 @media only screen and (min-width: 1024px){
 	.r-card__img {
 		margin: 0;
@@ -482,18 +491,7 @@ body {
 	border-color: var(--color-primary);
 }
 
-/* || Desktop Review Cards */
-@media only screen and (min-width: 1024px) {
-	.r-card__review {
-		line-height: 1.75;
-	}
-
-	.r-card:hover {
-		border-color: var(--color-primary);
-	}
-}
-
-/* || Desktop Specifics */
+/* || Desktop Specific Rules */
 @media only screen and (min-width: 1024px) {
 	/* Disabling Mobile only selectors */
 
@@ -510,13 +508,14 @@ body {
 	}
 }
 
-/* || Mobile Header */
+/* || Header */
 .header {
 	/* flex-direction: column; */
 	width: 100%;
 	min-height: 60px;
 }
 
+/* || The sign in and sign up buttons are invisible on mobile along with the desktop navigation list */
 .account__link {
 	display: none;
 }
@@ -592,6 +591,7 @@ body {
 .about {
 	margin-top: 50px;
 }
+
 .intro__image {
 	display: none;
 }
@@ -615,6 +615,7 @@ body {
 	margin-top: 40px;
 }
 
+/* || Intro section in large screens */
 @media only screen and (min-width: 1024px) {
 	/* || About Section */
 	.intro__title {
@@ -647,6 +648,7 @@ body {
 	box-shadow: none;
 }
 
+/* || Stats section in large screens */
 @media only screen and (min-width: 1024px) {
 	.stats {
 		flex-direction: row;
@@ -664,6 +666,7 @@ body {
 	background-color: #fff;
 }
 
+/* || Stat on a large screen */
 @media only screen and (min-width: 1024px) {
 	.stat {
 		border-right: 3px solid var(--color-light-gray);
@@ -704,6 +707,12 @@ body {
 
 .features {
 	margin-top: 150px;
+}
+
+@media only screen and (min-width: 1024px){
+	.features {
+		margin-top: 50px;
+	}
 }
 
 .feature-image {
@@ -791,11 +800,11 @@ body {
 	align-items: center;
 	width: 330px;
 	height: max-content;
+	margin-bottom: 30px;
 	padding: 20px;
 	border: 2px solid var(--color-light-gray-3);
 	border-radius: 0.5em;
 	transition: border-color ease-in-out 200ms;
-	margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 1024px){
@@ -820,13 +829,12 @@ body {
 .plan__title {
 	font-weight: 600;
 	font-size: 1.5rem;
-	margin-top: 10px;
+	margin: 10px 0 30px 0;
 }
 
 @media only screen and (min-width: 1024px){
-	
 	.plan__title {
-		margin: 30px 0;
+		margin-top: 30px;
 		font-size: 18px;
 	}
 }
@@ -834,6 +842,7 @@ body {
 .plan__pricing {
 	position: relative;
 	text-align: center;
+	margin-top: 30px;
 	bottom: auto;
 }
 
@@ -841,7 +850,6 @@ body {
 	.plan__pricing {
 		position: absolute;
 		bottom: 63px;
-		margin-top: 30px;
 	}
 }
 
@@ -952,29 +960,96 @@ body {
 
 
 /* || Mobile Footer */
+
 .footer-contents {
+	display: flex;
 	flex-direction: column;
 }
 
+
+@media only screen and (min-width: 1024px){
+	.footer-contents {
+		margin-top: 70px;
+		flex-direction: row;
+	}
+}
+
 .socials {
+	width: 320px;
 	height: max-content;
 }
 
+@media only screen and (min-width: 1024px){
+	.socials {
+		height: 350px;
+	}
+}
+
+.socials__company-info {
+	line-height: 1.5;
+	margin-top: 20px;
+}
+
+.socials__links {
+	width: 50%;
+	margin: 20px 0;
+}
+
 .socials__link {
+	height: 32px;
+	width: 32px;
+	border-radius: 33px;
+	background-color: var(--color-primary);
 	box-shadow: none;
 }
 
+@media only screen and (min-width: 1024px){
+	.socials__link {
+		box-shadow: 0 28px 18px var(--color-dark-shadow-1);
+	}
+}
+
+.social__copyright {
+	color: var(--color-light-gray-2);
+	font-weight: 400;
+	margin-top: 20px;
+}
+
 .footer-links {
+	display: grid;
 	width: 100%;
 	margin-left: 0;
 	margin-top: 30px;
-	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1024px){
+	.footer-links {
+		width: 600px;
+		margin-left: 230px;
+		margin-top: 0;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+	}
 }
 
 .column {
 	margin: 0;
 	margin-top: 30px;
 	padding: 10px;
+}
+
+@media only screen and (min-width: 1024px){
+	.column{
+		margin-top: 0;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.hidden {
+		display: none;
+	}
 }
